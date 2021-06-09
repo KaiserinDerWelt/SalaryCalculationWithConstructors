@@ -22,8 +22,10 @@ namespace SalaryCalculationWithConstructors
             var SAN = Empleado.SalarioAno(SM);//
             //Imprime los resultados del calculo
             var SCB = Empleado.SalarioAno(SM,1500);
+            var GUARBCOAZTECA = Empleado.AS(SM, 799);
             //mientras estamos en la clase main
             Console.WriteLine("Su salario mensual es de:" + SM);
+            Console.WriteLine("Su salario mensual con guardadito por productividad es de:" + GUARBCOAZTECA);
             Console.WriteLine("Su salario con aumento extraordinario del 10% es de:" + SCM);
             Console.WriteLine("Su salario anual es de:" + SAN);
             Console.WriteLine("Su salario con bono ley es" + SCB);
