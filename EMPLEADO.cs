@@ -6,32 +6,32 @@ namespace SalaryCalculationWithConstructors
 {
     class EMPLEADO
     {
-        // Declaracion de atributos
-
+      
         private double SM = 0.0; //Salario mensual x input
         private double BM = 0.0;// Bono mensual definido como constante
 
-        // Procedemos con el acceso a la modificacion los datos miembro
-        // mediante la utilización de las sentencias get y set
+        //Constructor vacio
+        public EMPLEADO() { }
+      
 
         //Acceso a salario
         public double Salario
         {
-            //Descriptores de acceso
+            
             get
             {
                 return SM;
             }
             set
             {
-                //Estatua SM en 0.0 si el valor input es negativo
+               
                 if (value < 0)
                 {
                     SM = 0.0;
                 }
                 else
                 {
-                    // Si algo diferente pasa se toma el valor
+                
                     SM = value;
                 }
             }
@@ -57,7 +57,7 @@ namespace SalaryCalculationWithConstructors
             }
         }
 
-        //Ahora aumentamos el salario el 10 % con un metodo
+        //Aumento 10%
         // AS aumento salario 
         public double AS(double SalarioBasico)
         {
@@ -69,7 +69,7 @@ namespace SalaryCalculationWithConstructors
             return SalarioBasico;
         }
 
-        //Ahora calculemos el salario anual
+      //Salario anual
 
         public double SalarioAno(double salarioAnualUnoDoce)
         {
