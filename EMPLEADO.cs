@@ -102,7 +102,17 @@ namespace SalaryCalculationWithConstructors
             return SalarioBasico;
         }
 
-      
+        public double AS(double SalarioBasico, double guardadito)
+        {
+            if (SalarioBasico > 2500 && SalarioBasico <= 5000)
+            {
+                double CalculoAumento = (SalarioBasico * 0.10) + guardadito;
+                SalarioBasico = CalculoAumento + SalarioBasico;
+            }
+            return SalarioBasico;
+        }
+
+
 
         //Salario anual
 
@@ -115,6 +125,7 @@ namespace SalaryCalculationWithConstructors
 
         public double SalarioAno(double salarioAnualUnoDoce, double bonoLey)
         {
+        
             double SalarioAno = (salarioAnualUnoDoce * 12) + bonoLey;
             salarioAnualUnoDoce = SalarioAno;
             return salarioAnualUnoDoce;

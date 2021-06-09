@@ -21,10 +21,12 @@ namespace SalaryCalculationWithConstructors
             var SCM = Empleado.AS(SM); //
             var SAN = Empleado.SalarioAno(SM);//
             //Imprime los resultados del calculo
+            var SCB = Empleado.SalarioAno(SM,1500);
             //mientras estamos en la clase main
             Console.WriteLine("Su salario mensual es de:" + SM);
             Console.WriteLine("Su salario con aumento extraordinario del 10% es de:" + SCM);
             Console.WriteLine("Su salario anual es de:" + SAN);
+            Console.WriteLine("Su salario con bono ley es" + SCB);
         }
     }
 }
