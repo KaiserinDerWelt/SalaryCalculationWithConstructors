@@ -41,6 +41,9 @@ namespace SalaryCalculationWithConstructors
             this.Nombre = Nombre;
             Console.WriteLine("Soy un constructor y recibo TRES parametro:Nombre & SSN & SM");
         }
+        // Finalizer o destructer
+        ~EMPLEADO() => Console.WriteLine("Soy el finalizer y destruyo!");
+
         //
 
         //Acceso a salario
