@@ -9,6 +9,11 @@ namespace SalaryCalculationWithConstructors
       
         private double SM = 0.0; //Salario mensual x input
         private double BM = 0.0;// Bono mensual definido como constante
+        private int SSN; //Social Security Number
+        private string Nombre;
+        private string CURP; //Clave Unica de Registro de Poblacion
+        private int NumeroCuenta; //Numero cuenta banco azteca
+        private string Email; // Correo electronico
 
         //Constructor vacio
         public EMPLEADO() { }
