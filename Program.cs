@@ -18,8 +18,8 @@ namespace SalaryCalculationWithConstructors
             var SM = SalarioParced;
             //Dot notation para acceder al atributo SALARIO de la clase Empleado
             Empleado.Salario = SM;
-            var SCM = Empleado.AS(SM);
-            var SAN = Empleado.SalarioAno(SM);
+            var SCM = Empleado.AS(SM); //
+            var SAN = Empleado.SalarioAno(SM);//
             //Imprime los resultados del calculo
             //mientras estamos en la clase main
             Console.WriteLine("Su salario mensual es de:" + SM);

@@ -11,9 +11,8 @@ namespace SalaryCalculationWithConstructors
         private double BM = 0.0;// Bono mensual definido como constante
         private int SSN; //Social Security Number
         private string Nombre;
-        private string CURP; //Clave Unica de Registro de Poblacion
-        private int NumeroCuenta; //Numero cuenta banco azteca
-        private string Email; // Correo electronico
+     
+   
 
         //Constructor vacio debe tener mismo nombre que la clase
         public EMPLEADO() { }
@@ -69,6 +68,8 @@ namespace SalaryCalculationWithConstructors
             }
         }
 
+        // Sobrecarga de metodos SM
+
         // Acceso a bono mensual
         public double BonoMensual
         {
@@ -101,7 +102,9 @@ namespace SalaryCalculationWithConstructors
             return SalarioBasico;
         }
 
-      //Salario anual
+      
+
+        //Salario anual
 
         public double SalarioAno(double salarioAnualUnoDoce)
         {
@@ -109,5 +112,13 @@ namespace SalaryCalculationWithConstructors
             salarioAnualUnoDoce = SalarioAno;
             return salarioAnualUnoDoce;
         }
+
+        public double SalarioAno(double salarioAnualUnoDoce, double bonoLey)
+        {
+            double SalarioAno = (salarioAnualUnoDoce * 12) + bonoLey;
+            salarioAnualUnoDoce = SalarioAno;
+            return salarioAnualUnoDoce;
+        }
+
     }
 }
