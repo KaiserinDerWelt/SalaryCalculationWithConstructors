@@ -15,9 +15,17 @@ namespace SalaryCalculationWithConstructors
         private int NumeroCuenta; //Numero cuenta banco azteca
         private string Email; // Correo electronico
 
-        //Constructor vacio
+        //Constructor vacio debe tener mismo nombre que la clase
         public EMPLEADO() { }
-      
+
+        //Constructor un parametro--> SM
+
+        public EMPLEADO(double SM): this (){
+            this.SM = SM;
+            Console.WriteLine("Soy un constructor y recibo UN parametro: SM");
+        }
+
+        //
 
         //Acceso a salario
         public double Salario
