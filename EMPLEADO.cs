@@ -25,6 +25,13 @@ namespace SalaryCalculationWithConstructors
             Console.WriteLine("Soy un constructor y recibo UN parametro: SM");
         }
 
+        //Constructor de dos parametros
+        public EMPLEADO(int SSN, double SM) : this()
+        {
+            this.SM = SM;
+            this.SSN = SSN;
+            Console.WriteLine("Soy un constructor y recibo DOS parametro: SSN & SM");
+        }
         //
 
         //Acceso a salario
